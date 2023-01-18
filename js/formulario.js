@@ -1,8 +1,8 @@
-var formulario = document.querySelector("#form")
+var formulario = document.querySelector("form") // se quita # ya que no existe un id form en htmnl.
 
 formulario.onsubmit = function(e) {
 
-  e.prevent();
+  e.preventDefault(); // Se agrega preventDefault correctamente
   
   var n = formulario.elements[0]
   var e = formulario.elements[1]
